@@ -1,0 +1,8 @@
+
+					// Bhop
+			if (MenuSettings::bhop) {
+				write<int>(oBaseAddress + OFFSET_IN_JUMP + 0x08, 5);
+				Sleep(5);
+				write<int>(oBaseAddress + OFFSET_IN_JUMP + 0x08, 4);
+				Sleep(5);
+			}
